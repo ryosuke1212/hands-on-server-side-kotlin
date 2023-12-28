@@ -1,15 +1,22 @@
 package org.example.fizzbuzz_if
 
 fun fizzBuzz(i: Int): String {
-    return if (i % 15 == 0) {
-        "FizzBuzz"
-    } else if (i % 3 == 0) {
-        "Fizz"
-    } else if (i % 5 == 0) {
-        "Buzz"
-    } else {
-        "$i"
+    val result: String
+    when {
+        i % 15 == 0 -> {
+            result = "FizzBuzz"
+        }
+        i % 3 == 0 -> {
+            result = "Fizz"
+        }
+        i % 5 == 0 -> {
+            result = "Buzz"
+        }
+        else -> {
+            result = "$i"
+        }
     }
+    return result
 }
 
 
