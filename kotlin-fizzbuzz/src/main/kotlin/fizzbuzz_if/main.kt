@@ -1,14 +1,14 @@
 package org.example.fizzbuzz_if
 
-fun fizzBuzz1(i: Int): String {
-    if (i % 15 == 0) {
-        return "FizzBuzz"
+fun fizzBuzz(i: Int): String {
+    return if (i % 15 == 0) {
+        "FizzBuzz"
     } else if (i % 3 == 0) {
-        return "Fizz"
+        "Fizz"
     } else if (i % 5 == 0) {
-        return "Buzz"
+        "Buzz"
     } else {
-        return "$i"
+        "$i"
     }
 }
 
@@ -16,7 +16,7 @@ fun fizzBuzz1(i: Int): String {
 fun main(args: Array<String>) {
     val n = 20
     for (i in 1..n) {
-        println(fizzBuzz1(i))
+        println(fizzBuzz(i))
     }
 }
 //fun fizzBuzz2(i: Int): String {
