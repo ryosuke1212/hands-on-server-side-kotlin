@@ -11,9 +11,9 @@ fun fizzBuzz(i: Int): String {
         i % 5 == 0 -> {
             "Buzz"
         }
-        else -> {
-            "$i"
-        }
+//        else -> {
+//            "$i"
+//        }
     }
 }
 
